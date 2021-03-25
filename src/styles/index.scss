@@ -2,25 +2,6 @@
 @import 'grid';
 @import 'variables';
 
-$message-bubble-padding: 12px;
-$message-bubble-background-color: $bg-color-light;
-$message-bubble-color: $color-text-dark;
-$message-bubble-border-radius: $default-border-radius;
-$message-bubble-link-color: $color-blue;
-$message-bubble-me-background-color: $color-blue;
-$message-bubble-me-color: $color-text-lighter;
-$message-bubble-me-link-color: $color-text-lighter;
-$message-bubble-nude-padding: 0;
-$message-bubble-quoted-padding: 12px 12px 12px 0;
-$message-bubble-quoted-indicator-width: 3px;
-$message-bubble-quoted-indicator-margin:
-	(-2 * $message-bubble-quoted-indicator-width)
-	(2 * $message-bubble-quoted-indicator-width)
-	(-2 * $message-bubble-quoted-indicator-width)
-	$message-bubble-quoted-indicator-width;
-$message-bubble-quoted-indicator-border-radius: $default-border-radius;
-$message-bubble-quoted-indicator-color: $color-green;
-
 html,
 body {
 	width: 100%;
@@ -60,33 +41,4 @@ body {
 	flex-direction: column;
 
 	height: 100%;
-}
-
-.btn-round {
-	border-radius: 50% !important;
-	width: 60px !important;
-	height: 60px !important;
-	align-items: center !important;
-}
-.btn-round svg {
-    width: 28px !important;
-    height: 28px !important;
-}
-.form-field__description__32VwT {
-	margin: 0 !important;
-}
-.form-field__label__1hSc7 {
-	display: none !important;
-}
-.welcome-main {
-	width: 100%;
-	overflow-y: auto !important;
-}
-.welcome-text {
-	display: inline-flex;
-	margin: 10px 16px 4px 16px;
-	padding: $message-bubble-padding;
-	color: $message-bubble-color;
-	border-radius: $message-bubble-border-radius;
-	background-color: $message-bubble-background-color;
 }
