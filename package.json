@@ -1,13 +1,13 @@
 {
-	"name": "@rocket.chat/livechat",
-	"version": "1.8.0",
+	"name": "@adarsh6162/livechat",
+	"version": "1.0.1",
 	"files": [
 		"/build"
 	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/RocketChat/Rocket.Chat.Livechat"
+		"url": "https://github.com/bitpodio/Rocket.Chat.Livechat"
 	},
 	"scripts": {
 		"clean": "rimraf build",

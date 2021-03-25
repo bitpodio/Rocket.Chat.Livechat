@@ -30,7 +30,7 @@ const renderCustomFields = (customFields, { loading, handleFieldChange = () => {
 			>
 				<TextInput
 					name={_id}
-					placeholder={I18n.t('Insert your %{field} here...', { field: label })}
+					placeholder={I18n.t('%{field}', { field: label })}
 					value={state[_id].value}
 					disabled={loading}
 					onInput={handleFieldChange}
@@ -226,7 +226,7 @@ export default class Register extends Component {
 									<TextInput
 										name='name'
 										value={name.value}
-										placeholder={I18n.t('Insert your %{field} here...', { field: I18n.t('Name') })}
+										placeholder={I18n.t('%{field}', { field: I18n.t('Name') })}
 										disabled={loading}
 										onInput={this.handleFieldChange}
 									/>
