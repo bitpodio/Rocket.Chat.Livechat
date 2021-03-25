@@ -140,6 +140,7 @@ export const ScreenFooter = ({ children, options, limit }) => (
 		<FooterContent>
 			{options}
 			{limit}
+			<PoweredBy />
 		</FooterContent>
 	</Footer>
 );
@@ -157,7 +158,6 @@ const ChatButton = ({
 		badge={badge}
 		onClick={onClick}
 		className={createClassName(styles, 'screen__chat-button')}
-		className="btn-round"
 		img={triggered && agent && agent.avatar.src}
 	>
 		{text}

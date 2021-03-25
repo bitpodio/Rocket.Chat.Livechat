@@ -166,10 +166,6 @@ export class MessageList extends MemoizedComponent {
 		className,
 		style = {},
 	}) => (
-		<div className="welcome-main">
-			<div className="welcome-inside">
-				<div className="welcome-text">Welcome to Bitpod! We're here to help you.</div>
-			</div>
 		<div
 			onScroll={this.handleScroll}
 			className={createClassName(styles, 'message-list', {}, [className])}
@@ -179,7 +175,6 @@ export class MessageList extends MemoizedComponent {
 			<ol className={createClassName(styles, 'message-list__content')}>
 				{this.renderItems(this.props)}
 			</ol>
-		</div>
 		</div>
 	)
 }
