@@ -10,7 +10,7 @@ import styles from './styles.scss';
 
 
 const defaultTitle = I18n.t('Leave a message');
-const defaultMessage = I18n.t('We are not online right now. Please, leave a message.');
+const defaultMessage = I18n.t('Our agents are not available right now. please leave a message and we will get back to you.');
 const defaultUnavailableMessage = ''; // TODO
 
 export default class LeaveMessage extends Component {
@@ -103,7 +103,7 @@ export default class LeaveMessage extends Component {
 						<TextInput
 							name='name'
 							value={name.value}
-							placeholder={I18n.t('Insert your %{field} here...', { field: I18n.t('Name') })}
+							placeholder={I18n.t('%{field}*', { field: I18n.t('Name') })}
 							disabled={loading}
 							onInput={this.handleNameChange}
 						/>
@@ -121,7 +121,7 @@ export default class LeaveMessage extends Component {
 						<TextInput
 							name='email'
 							value={email.value}
-							placeholder={I18n.t('Insert your %{field} here...', { field: I18n.t('Email') })}
+							placeholder={I18n.t('%{field}*', { field: I18n.t('Email') })}
 							disabled={loading}
 							onInput={this.handleEmailChange}
 						/>
@@ -160,7 +160,7 @@ export default class LeaveMessage extends Component {
 							value={message.value}
 							multiline
 							rows={4}
-							placeholder={I18n.t('Write your message...')}
+							placeholder={I18n.t('Message*')}
 							disabled={loading}
 							error={message.showError}
 							onInput={this.handleMessageChange}
@@ -170,7 +170,7 @@ export default class LeaveMessage extends Component {
 				: null}
 
 			<ButtonGroup>
-				<Button submit loading={loading} disabled={!valid || loading} stack>{I18n.t('Send')}</Button>
+				<Button submit loading={loading} disabled={!valid || loading} stack>{I18n.t('Leave a message')}</Button>
 			</ButtonGroup>
 		</Form>
 	)
