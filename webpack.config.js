@@ -139,7 +139,7 @@ module.exports = (env, argv) => [
 				),
 			}),
 			new HtmlWebpackPlugin({
-				title: 'Rocket.Chat.Livechat',
+				title: 'Bitpod',
 				chunks: [
 					'polyfills',
 					'vendor',

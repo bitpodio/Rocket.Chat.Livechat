@@ -110,9 +110,9 @@ class ScreenHeader extends Component {
 						</Tooltip.Trigger>
 					)}
 					{(!expanded && !windowed) && (
-						<Tooltip.Trigger content={I18n.t('Expand chat')} placement='bottom-left'>
-							<Header.Action aria-label={I18n.t('Expand chat')} onClick={onOpenWindow}>
-								<OpenWindowIcon width={20} height={20} />
+						<Tooltip.Trigger content={I18n.t('Expand chat')} placement='bottom-left' style="display: none">
+							<Header.Action aria-label={I18n.t('Expand chat')} style="display: none" onClick={onOpenWindow}>
+								<OpenWindowIcon width={20} height={20} style="display: none" />
 							</Header.Action>
 						</Tooltip.Trigger>
 					)}
